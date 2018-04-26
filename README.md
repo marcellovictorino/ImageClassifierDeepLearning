@@ -1,7 +1,10 @@
 # ImageClassifierDeepLearning
 
 First big problem:
-TensorFlow Requires Python version 64bit
+TensorFlow Requires Python version 64bit. Installed a parallel version of 3.6.5_64bit
+
+Changed executable name to python64
+Added Path to Environment Variable
 
 This is a Tutorial to Learn about Object Detection using Tensor Flow
 
