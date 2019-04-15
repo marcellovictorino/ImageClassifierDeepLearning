@@ -1,11 +1,13 @@
-# ImageClassifierDeepLearning
+# Image Classifier DeepLearning
 
-First big problem:
-TensorFlow Requires Python version 64bit. Installed a parallel version of 3.6.5_64bit
+This is a Tutorial to Learn about Object Detection using Tensor Flow already trained models.
 
-Changed executable name to python64
-Added Path to Environment Variable
+## Application Ideas
+Leverage the new TensorFlow.Hub tool to load already pretty well trained models, and then do a Transfer Learning to work with a  specific subset of objects to be detected - namely urban transportation vehicles and pedestrians.
 
-This is a Tutorial to Learn about Object Detection using Tensor Flow
+## Challenges
+**Problem 1**: Running the Classifier model every frame is very taxing and loses track of "already identified" objects - rework.
 
-The idea would be to leverage the new TensorFlow.Hub tool to load already pretty well trained models, and then do a Transfer Learning to work with s desired specific subset of objects to be detected.
+**Fix Strategy**: use a combination of Classifier and Tracker.
+
+**Problem 2**: Tracker not working properly when there is superposition of vehicles (i.e. vehicle movements in an intersection).
